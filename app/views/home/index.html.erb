@@ -3,14 +3,15 @@
     <th>Objets des emails</th>
     <% @email.each do |email| %>
       <tr>
-        <td><%= email.objet %></td>
+        <td style="border: 2px solid black;"
+        onclick="loadBody()"><%= email.objet %></td>
       </tr>
       <% end %>
   </table>
   <table>
     <th>Contenu de l'email</th>
     <tr>
-      <td><%= @email.last.body %></td>
+      <td id="content"></td>
     </tr>
   </table>
 </div>
