@@ -1,8 +1,16 @@
-<table>
-  <th>Liste des objets d'emails</th>
-  <% @email.each do |email| %>
+<div>
+  <table>
+    <th>Objets des emails</th>
+    <% @email.each do |email| %>
+      <tr>
+        <td><%= email.objet %></td>
+      </tr>
+      <% end %>
+  </table>
+  <table>
+    <th>Contenu de l'email</th>
     <tr>
-      <td><%= email.objet %></td>
+      <td><%= @email.last.body %></td>
     </tr>
-    <% end %>
-</table>
+  </table>
+</div>
