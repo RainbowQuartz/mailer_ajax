@@ -6,4 +6,10 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get only objet" do
+    get root_path
+    
+    assert_response :success
+  end
+
 end
