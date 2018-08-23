@@ -14,3 +14,33 @@
     </tr>
   </table>
 </div>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Objet</th>
+      <th scope="col">Contenu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @email.each do |email| %>
+      <th scope="row">1</th>
+      <td><%= email.objet %></td>
+      <% end %>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
