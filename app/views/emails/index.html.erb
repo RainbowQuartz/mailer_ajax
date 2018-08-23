@@ -6,7 +6,7 @@
 
     <div class="list col-md-4">
         <!--<%= link_to 'Email', new_email_path, remote: true %>-->
-        <div class="container-fluid">
+        <table class="table table-sm">
           <% @emails.each do |email| %>
 
               Reçu le: <%=email.created_at.strftime("%d-%b-%Y") %>
@@ -17,7 +17,7 @@
 
             </div>
           <% end %>
-        </div>
+        </table>
 
     </div>
 
