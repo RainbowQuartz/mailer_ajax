@@ -1,0 +1,32 @@
+<div class="container-fluid  jumbotron">
+
+  <div class="row">
+
+
+
+    <div class="list col-md-4">
+        <!--<%= link_to 'Email', new_email_path, remote: true %>-->
+        <div class="container-fluid">
+          <% @emails.each do |email| %>
+
+              Reçu le: <%=email.created_at.strftime("%d-%b-%Y") %>
+              <%= link_to email.objet, email_path(email), class: "col-md-8 show", remote: true%>
+              <div class="col-md-4">
+                <%= link_to 'Suppr', email, method: :delete, data: {confirm: 'Sûre ????'}, remote: true, class: 'delete-email btn btn-default btn-danger' %>
+              </div>
+
+            </div>
+          <% end %>
+        </div>
+
+    </div>
+
+    <div class="content col-md-8">
+      <div class="container show-email">
+
+      </div>
+
+
+    </div>
+    </div>
+</div>

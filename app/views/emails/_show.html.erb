@@ -1,0 +1,3 @@
+<h1>Objet: <%= @email.objet %></h1>
+<h2>Reçu le: <%= @email.created_at.strftime("%d-%b-%Y") %></h2>
+<%= @email.body %>
