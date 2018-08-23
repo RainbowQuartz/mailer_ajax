@@ -1,6 +1,6 @@
 # Email Viewer by THP
 
-## Notre Proooooojeeeet 
+## Notre Prooooooooooooooooooooooooooooojeeeeeeeeeeeeeeeeeet 
 ![alt text](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimage.noelshack.com%2Ffichiers%2F2017%2F12%2F1490048480-macron.png&f=1)
 
 Notre projet était de créer un site permettant de lire des emails. Ce site doit afficher deux colonnes, une affichant les objets des emails reçus et une autre affichant le contenu de l'email sélectionné.<br /><br />
