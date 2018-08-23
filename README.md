@@ -1,24 +1,5 @@
-# README
+# Email Viewer by THP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Notre Proooooojeeeet
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Notre projet était de créer un site permettant de lire des emails. Ce site doit afficher deux colonnes, une affichant les objets des emails reçus et une autre affichant le contenu de l'email sélectionné.
