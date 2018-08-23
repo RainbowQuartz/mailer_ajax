@@ -1,6 +1,7 @@
 # Email Viewer by THP
 
-## Notre Proooooojeeeet
+## Notre Proooooojeeeet 
+![alt text](https://emoji.slack-edge.com/T3W8B88JW/macron/0e68f376314d7cf5.png)
 
 Notre projet était de créer un site permettant de lire des emails. Ce site doit afficher deux colonnes, une affichant les objets des emails reçus et une autre affichant le contenu de l'email sélectionné.<br /><br />
 Voici le lien vers la version en production de ce projet : <a href='https://email-viewer-thprennes.herokuapp.com/'>https://email-viewer-thprennes.herokuapp.com/</a>
