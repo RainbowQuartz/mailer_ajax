@@ -4,6 +4,9 @@ class HomeController < ApplicationController
   end
 
   def show
+    @email = Email.find(params[:id])
+    @email.update(read: true)
+    end
   end
 
   def new
@@ -34,3 +37,4 @@ class HomeController < ApplicationController
     params.permit(:object, :body)
   end
 end
+
