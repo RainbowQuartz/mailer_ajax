@@ -14,4 +14,16 @@ Nous avons ensuite utilisé la gem faker (<a href='https://github.com/stympy/fak
 
 ## Qui sommes-nous ?
 
-Nous sommes Léona Chevrel, Romain Saillour et Sandrine Le Breton, moussaillon-ne-s Reannais.e.s de la session 5 de The Hacking Project.
+Nous sommes Léona Chevrel, Romain Saillour, Rémi Samson, Christophe Leray et Sandrine Le Breton, moussaillon-ne-s Reannais.e.s de la session 5 de The Hacking Project.
+
+## Pour lancer le projet
+
+git clone
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails server
+
+
+Enjoy
