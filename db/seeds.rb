@@ -7,8 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
+	Email.delete_all
 	5.times do
   		email = Email.create!(
         objet: Faker::RickAndMorty.character,
-        body: Faker::RickAndMorty.quote)
+        body: Faker::RickAndMorty.quote,
+				read: true)
+	end
+
+	5.times do
+			email = Email.create!(
+				objet: Faker::RickAndMorty.character,
+				body: Faker::RickAndMorty.quote,
+				read: false)
 	end
