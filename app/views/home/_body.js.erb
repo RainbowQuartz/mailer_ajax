@@ -1,9 +1,0 @@
-$('#content').html('<%= j (render "layouts/content") %>');
-$('#content').slideDown();
-<% Email.all.each do |email| %>
-	<% if email.read %>
-		$('#email-id-<%= email.id %>').css('display', 'none');
-	<% else %>
-		$('#email-id-<%= email.id %>').css('display', 'inline-block');
-	<% end %>
-<% end %>;
