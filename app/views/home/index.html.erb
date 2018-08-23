@@ -1,47 +1,21 @@
 <div>
-  <table>
+  <table class="table table-striped">
     <th>Objets des emails</th>
-    <% @email.each do |email| %>
-      <tr>
-        <td style="border: 2px solid black;"
-        onclick="loadBody()"><%= email.objet %></td>
-      </tr>
-      <% end %>
-  </table>
-  <table>
-    <th>Contenu de l'email</th>
-    <tr>
-      <td id="content"></td>
-    </tr>
-  </table>
-</div>
-
-<table class="table table-striped table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Objet</th>
-      <th scope="col">Contenu</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
+<div class="container-fluid">
+  <div class="email-list">
+    <ul class='brick-list'> 
       <% @email.each do |email| %>
-      <th scope="row">1</th>
-      <td><%= email.objet %></td>
+        
+        <li class='object'>
+          <%= link_to email_path(email), remote: true do %>
+            <%= email.objet %>
+          <% end %>
+          <i class="material-icons md-blue" id="email-id-<%= email.id %>">fiber_manual_record</i>
+        </li>
+            
       <% end %>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+    </ul>
+  </div>
+  <div id="email-content">
+  </div>
+</div>

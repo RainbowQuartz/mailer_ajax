@@ -22,10 +22,20 @@ function loadBody(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("content").innerHTML =
+      document.getElementById("contenu").innerHTML =
       this.responseText;
     }
   };
-  xhttp.open("GET", "body.js.erb", true);
+  xhttp.open("GET", true);
   xhttp.send();
 }
+
+$(window).bind("load", function() {
+	<% Email.all.each do |email| %>
+		<% if email.read %>
+			$('#email-id-<%= email.id %>').css('display', 'none');
+		<% else %>
+			$('#email-id-<%= email.id %>').css('display', 'inline-block');
+		<% end %>
+	<% end %>
+});
